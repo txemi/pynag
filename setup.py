@@ -27,7 +27,7 @@ class BuildMan(Command):
         stdout, stderr = sphinx_proc.communicate()
         return_code = sphinx_proc.wait()
         if return_code:
-            print("Warning: Build of manpage failed \"%s\":\n%s\n%s" % (
+            print("Warning: Build of manpage failed \"{}\":\n{}\n{}".format(
                       cmd,
                       stdout,
                       stderr))
